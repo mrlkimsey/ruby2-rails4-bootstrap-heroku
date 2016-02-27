@@ -9,6 +9,7 @@
 !.slim-lint.yml
 !.slugignore
 !.travis.yml
+!.vendor_urls
 *~
 
 
