@@ -188,6 +188,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.1.0)
     rake (11.2.2)
+    rgeo (0.5.3)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -326,6 +327,7 @@ DEPENDENCIES
   rack-timeout
   rails (= 4.2.6)
   rails_12factor
+  rgeo
   rspec
   rspec-rails
   rubocop

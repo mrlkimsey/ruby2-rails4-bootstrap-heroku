@@ -1,5 +1,7 @@
 # Linux.gitignore
 .*
+!.buildpacks
+!.coveralls.yml
 !.gitignore
 !.rspec
 !.rubocop.yml

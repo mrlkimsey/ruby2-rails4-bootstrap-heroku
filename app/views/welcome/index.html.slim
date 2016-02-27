@@ -1,17 +1,22 @@
 - title t('hello')
-h1
-  | Rails Starter App
-  small< 14.0.0
-ul.list-inline.lead
-  li
-    | Ruby
-    small.text-muted< 2.3.1
-  li
-    | Rails
-    small.text-muted< 4.2.6
-  li
-    | Bootstrap for Sass
-    small.text-muted< 3.3.6
-  li
-    | Font Awesome
-    small.text-muted< 4.6.3
+.page-header
+  h1.text-center
+    | RGeo extensions test
+.support-table
+  table.table.table-bordered
+    thead
+      tr
+        th.text-center colspan= 2
+          | RGeo version #{RGeo::VERSION}
+    tbody
+      tr
+        td
+          | GEOS Supported?
+        = support_cell(RGeo::Geos.supported?)
+      tr
+        td
+          | Proj4 Supported?
+        = support_cell(RGeo::CoordSys::Proj4.supported?)
+hr
+h4 Buildpacks:
+pre= File.read(Rails.root.join('.buildpacks'))
