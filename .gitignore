@@ -14,6 +14,7 @@
 !.slim-lint.yml
 !.slugignore
 !.travis.yml
+!.vendor_urls
 *~
 
 # temporary files which can be created if a process still has a handle open of a deleted file

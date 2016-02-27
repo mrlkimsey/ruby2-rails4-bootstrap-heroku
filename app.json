@@ -22,6 +22,7 @@
     "RAILS_ENV": "production",
     "RAILS_SERVE_STATIC_FILES": "enabled",
     "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
+    "LD_LIBRARY_PATH": "/app/lib",
     "RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR": {
       "description": "Reduces RGenGC's memory consumption",
       "value": "1.3"
