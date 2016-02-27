@@ -1,0 +1,17 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+.support-table {
+  @include center-block;
+  width: 290px;
+}
+
+.supported {
+  background-color: $brand-success;
+  color: white;
+}
+
+.not-supported {
+  background-color: $brand-danger;
+  color: white;
+}

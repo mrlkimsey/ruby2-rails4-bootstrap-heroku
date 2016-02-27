@@ -3,6 +3,17 @@
 # https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
 #
 
+# Linux.gitignore
+.*
+!.buildpacks
+!.coveralls.yml
+!.gitignore
+!.rspec
+!.rubocop.yml
+!.scss-lint.yml
+!.slim-lint.yml
+!.slugignore
+!.travis.yml
 *~
 
 # temporary files which can be created if a process still has a handle open of a deleted file
