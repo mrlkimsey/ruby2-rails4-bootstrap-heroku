@@ -21,7 +21,6 @@
     },
     "RAILS_ENV": "production",
     "RAILS_SERVE_STATIC_FILES": "enabled",
-    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git",
     "LD_LIBRARY_PATH": "/app/lib",
     "RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR": {
       "description": "Reduces RGenGC's memory consumption",
@@ -32,6 +31,17 @@
       "generator": "secret"
     }
   },
+  "buildpacks": [
+    {
+      "url": "https://github.com/diowa/heroku-buildpack-rgeo-prep.git"
+    },
+    {
+      "url": "https://github.com/peterkeen/heroku-buildpack-vendorbinaries.git"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ],
   "addons": [
     "heroku-postgresql:hobby-dev",
     "papertrail",
